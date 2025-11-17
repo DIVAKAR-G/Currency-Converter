@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Game</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="Stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <!-- Start Screen -->
-      <div class="screen active" id="start-screen">
-        <h1>Quiz Time!</h1>
-        <p>Test your knowledge with these fun questions</p>
-        <button id="start-btn">Start Quiz</button>
-      </div>
+        <h1>Currency Converter</h1>
+        <form id="converter-form">
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter the amount" value="1">
+            </div>
 
-      <!-- Quiz Screen -->
-      <div class="screen" id="quiz-screen">
-        <div class="quiz-header">
-          <h2 id="question-text">Question goes here</h2>
-          <div class="quiz-info">
-            <p>
-              Question <span id="current-question">1</span> of
-              <span id="total-questions">5</span>
-            </p>
-            <p>Score: <span id="score">0</span></p>
-          </div>
-        </div>
-        <div id="answers-container" class="answers-container"></div>
-        <div class="progress-bar">
-          <div id="progress" class="progress"></div>
-        </div>
-      </div>
+            <div class="form-group">
+                <label for="from-currency">From</label>
+                <select id="from-currency"></select>
+            </div>
 
-      <!-- Result Screen -->
-      <div id="result-screen" class="screen">
-        <h1>Quiz Results</h1>
-        <div class="result-info">
-          <p>
-            You scored <span id="final-score">0</span> out of
-            <span id="max-score">5</span>
-          </p>
-          <div id="result-message">Good job!</div>
+            <div class="form-group">
+                <label for="to-currency">To</label>
+                <select id="to-currency"></select>
+            </div>
+
+            <button type="submit">Convert</button>
+        </form>
+        <div class="form-group">
+             <p id="result"></p>
         </div>
-        <button id="restart-btn">Restart Quiz</button>
-      </div>
     </div>
-
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
