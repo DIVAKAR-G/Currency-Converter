@@ -7,13 +7,12 @@
 :root {
     --bg-primary: #1f172a;
     --bg-secondary: #4e293b;
-    /* Added missing variables */
     --text-primary: #f0f0f0;
     --text-secondary: #c9c9c9;
     --bg-input: #5a3c4c;
     --border-color: #7b5b6d;
-    --accent-primary: #3b82f6; /* A common blue accent */
-    --accent-hover: #1e40af; /* A darker blue for hover */
+    --accent-primary: #3b82f6;
+    --accent-hover: #1e40af;
 }
 
 body {
@@ -41,7 +40,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.form-group { /* Standardized class name */
+.form-group {
     margin-bottom: 15px;
 }
 
@@ -66,7 +65,7 @@ input:focus,
 select:focus {
     outline: none;
     border-color: var(--accent-primary);
-    box-shadow: 0 0 2px rgba(59, 130, 246, 0.5); /* Adjusted shadow opacity */
+    box-shadow: 0 0 2px rgba(59, 130, 246, 0.5);
 }
 
 button {
@@ -79,7 +78,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px; /* Added margin above button */
+    margin-top: 10px;
 }
 
 button:hover {
